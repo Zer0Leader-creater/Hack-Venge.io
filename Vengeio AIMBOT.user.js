@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Venge.io AIMBOT
-// @version      8.0
+// @version      8.4
 // @description  Venge AIMBOT
 // @author       wernser412
 // @match        *://venge.io/*
@@ -217,8 +217,12 @@ function createGui() {
         property: 'changeWeapon',
     },{folder: 'Weapon'});
     // End
-    return gui;
+
 };
+
+var GUI = createGui();
+window.gui = GUI;
+
 
 // FPS counter
 var stats = new Stats();
