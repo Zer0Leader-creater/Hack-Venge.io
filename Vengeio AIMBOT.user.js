@@ -217,11 +217,8 @@ function createGui() {
         property: 'changeWeapon',
     },{folder: 'Weapon'});
     // End
+    return gui;
 };
-
-var GUI = createGui();
-window.gui = GUI;
-GUI.Toast('Join our Discord: discord.gg/hRpPrN3');
 
 // FPS counter
 var stats = new Stats();
